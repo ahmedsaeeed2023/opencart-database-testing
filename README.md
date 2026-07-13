@@ -11,6 +11,7 @@ To verify that OpenCart's backend database correctly enforces data integrity rul
 - **Testing Method:** Direct SQL queries (SELECT, INSERT, UPDATE)
 - **Tables Covered:** `oc_product`, `oc_category`
 - **Techniques:** Constraint validation, boundary testing, referential integrity checks
+- **SQL Scripts:** Raw queries used for test execution (see `sql-scripts/`)
 
 ## ✅ Covered Test Areas
 - Data type & format validation (e.g., price, quantity fields)
@@ -27,6 +28,8 @@ To verify that OpenCart's backend database correctly enforces data integrity rul
 - Invalid `language_id` foreign key values accepted
 
 ## 📁 Project Structure
+├── sql-scripts/
+│   └── OpenCart_DB_TestQueries.sql
 ├── test-cases/
 │   └── OpenCart_DB_TestCases.xlsx
 ├── bug-reports/
